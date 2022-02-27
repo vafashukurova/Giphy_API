@@ -6,7 +6,7 @@ var giphy = function () {
 
         $.ajax({
             url: "http://api.giphy.com/v1/gifs/search?q=" + $(this).text() + "&api_key=MEj8eH7I0CFIuZdgHGifUKdR0QaSAb3N",
-            type: "GET",
+            method: "GET",
             success: function (response) {
                 $(".giphy-content img").remove();
                 for (let i = 0; i <= 10; i++) {
