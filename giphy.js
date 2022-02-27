@@ -5,7 +5,7 @@ var giphy = function () {
         e.preventDefault()
 
         $.ajax({
-            url: "http://api.giphy.com/v1/gifs/search?q=" + $(this).text() + "&api_key=MEj8eH7I0CFIuZdgHGifUKdR0QaSAb3N",
+            url : "https://api.giphy.com/v1/gifs/search?api_key=3DpJ6yvYHR5dLfeDhGDXLaeCCdEGHE2p&q=" + $(this).text() + "&limit=25&offset=0&rating=g&lang=en",
             method: "GET",
             success: function (response) {
                 $(".giphy-content img").remove();
